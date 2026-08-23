@@ -4,7 +4,7 @@ Hand-finished ready-made blouse boutique · Kandivali West, Mumbai
 
 ## ⚠️ Ownership & Copyright Notice
 
-This website was **created by me** (the repository owner). All code, design, text, layout, and images in this repository are my property.
+This website was **Abdul Rehman khan ,Contact:7208380553**(the repository owner). All code, design, text, layout, and images in this repository are my property.
 
 **No one is allowed to copy, reuse, modify, redistribute, republish, or deploy this website — or any part of it — without my explicit written permission.**
 
