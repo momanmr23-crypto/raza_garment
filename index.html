@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RAZA GARMENT — hand-finished ready-made blouses in Kandivali West, Mumbai. All sizes available with expandable fit and tailoring support.">
+<title>RAZA GARMENT — Hand-finished Blouses</title>
+<style>
+:root{
+  --cream:#f7f0e3; --ivory:#fffaf1; --ink:#25262a; --crimson:#a51f2a;
+  --mustard:#d2a126; --indigo:#293044; --sage:#8c9b7b; --pink:#c56b72;
+  --gold:#b88b2b; --line:rgba(37,38,42,.13);
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+button,a{font:inherit}
+a{text-decoration:none;color:inherit}
+.noise:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+.topbar{background:var(--indigo);color:#fff8eb;padding:9px 0;text-align:left;font-size:12px;letter-spacing:.12em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+.topbar-track{display:inline-flex;min-width:max-content;animation:topbar-marquee 24s linear infinite}
+.topbar-track span{display:inline-block;padding:0 5vw}
+.topbar:hover .topbar-track{animation-play-state:paused}
+@keyframes topbar-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.nav-overlay{position:sticky;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:15px 5vw;background:rgba(247,240,227,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo-spacer{display:block;width:78px;height:78px;flex:0 0 78px}
+.logo-spacer img{width:100%;height:100%;object-fit:contain}
+.navlinks{display:flex;gap:40px;font-size:13px;text-transform:uppercase;letter-spacing:.11em}
+.navlinks a{color:#2b2118;font-weight:600;letter-spacing:.11em;text-transform:uppercase;position:relative;padding-bottom:4px}
+.navlinks a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:#a51f2a;transition:width .25s ease}
+.navlinks a:hover{color:#a51f2a}
+.navlinks a:hover:after{width:100%}
+.menu-toggle{display:none}
+.navcta{border:1px solid rgba(43,33,24,.35);padding:10px 15px;border-radius:999px;font-size:12px;color:#2b2118}
+.nav-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.nav-icon{display:inline-flex;align-items:center;justify-content:center;color:#6b1d24;transition:opacity .2s ease,transform .2s ease;position:relative}
+.nav-icon:hover{opacity:.8;transform:translateY(-1px)}
+.cart-count{position:absolute;top:-6px;right:-8px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#cf2020;color:#fff;font-size:10px;font-weight:700;line-height:16px;text-align:center;display:none}
+.hero{position:relative;overflow:hidden;background:url('image/hero image.webp') no-repeat center center;background-size:contain}
+.hero-media{position:relative;width:100%;overflow:hidden}
+.hero-slider{display:flex;transition:transform 1.2s cubic-bezier(.65,0,.35,1);will-change:transform}
+.hero-slide{flex:0 0 100%;width:100%;min-width:100%;max-width:100%;flex-shrink:0}
+.hero-slide img{width:100%;height:auto;display:block;filter:saturate(1.05) contrast(1.03)}
+.hero:after{display:none}
+.hero-content{display:block;position:absolute;top:24%;left:6vw;z-index:10;max-width:480px;color:#2b2118}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px;color:#f0d48b}
+.hero h1{font-family:var(--serif);font-size:clamp(34px,4vw,56px);line-height:1.1;letter-spacing:-.01em;margin:0 0 18px;color:#6b1d24;font-weight:700}
+.hero h1 .gold-text{color:var(--mustard);font-style:italic;font-weight:400}
+.hero p{font-size:clamp(14px,1.1vw,16px);line-height:1.5;margin:0 0 24px;color:#4a3b32}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.45);font-weight:700;font-size:13px}
+.btn.primary{background:#6b1d24;color:#fff;border-color:#6b1d24}
+.btn.gold{background:transparent;color:#2b2118;border-color:#2b2118}
+.sequin{position:absolute;z-index:2;width:4px;height:4px;border-radius:50%;background:#ffe4a3;box-shadow:0 0 16px #ffd26a;animation:float 5s ease-in-out infinite}
+.s1{top:23%;left:68%}.s2{top:34%;left:83%;animation-delay:1s}.s3{top:18%;left:91%;animation-delay:2s}.s4{top:52%;left:74%;animation-delay:1.6s}.s5{top:68%;left:88%;animation-delay:.7s}
+@keyframes float{0%,100%{transform:translateY(0) scale(.7);opacity:.15}50%{transform:translateY(-18px) scale(1.4);opacity:.9}}
+
+.section{padding:110px 5vw;position:relative}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:7vw;align-items:end}
+.intro{position:relative;overflow:hidden}
+.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);font-weight:800}
+.display{font-family:var(--serif);font-size:clamp(42px,5.4vw,78px);line-height:.98;letter-spacing:-.04em;margin:12px 0}
+.lede{font-size:17px;line-height:1.7;max-width:560px}
+.intro::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.38;background-image:radial-gradient(circle at 12% 18%,rgba(201,138,46,.28) 0 1.4px,transparent 1.8px),radial-gradient(circle at 24% 31%,rgba(134,27,34,.12) 0 1px,transparent 1.6px),radial-gradient(circle at 41% 15%,rgba(201,138,46,.24) 0 1.2px,transparent 1.7px),radial-gradient(circle at 63% 24%,rgba(201,138,46,.22) 0 1.3px,transparent 1.8px),radial-gradient(circle at 82% 14%,rgba(134,27,34,.10) 0 1px,transparent 1.6px),radial-gradient(circle at 91% 37%,rgba(201,138,46,.25) 0 1.3px,transparent 1.8px),radial-gradient(circle at 17% 67%,rgba(201,138,46,.20) 0 1.2px,transparent 1.8px),radial-gradient(circle at 35% 82%,rgba(134,27,34,.10) 0 1px,transparent 1.6px),radial-gradient(circle at 57% 72%,rgba(201,138,46,.24) 0 1.3px,transparent 1.8px),radial-gradient(circle at 76% 88%,rgba(201,138,46,.20) 0 1.2px,transparent 1.8px);background-size:180px 180px,220px 220px,260px 260px,200px 200px,240px 240px,190px 190px,230px 230px,270px 270px,210px 210px,250px 250px;mix-blend-mode:multiply}
+.intro> *{position:relative;z-index:3}
+.intro-pattern{position:absolute;left:0;right:0;top:0;bottom:0;display:grid;grid-template-columns:repeat(24,1fr);grid-auto-rows:1fr;place-items:center;font-size:15px;color:var(--gold);opacity:.5;pointer-events:none;z-index:1;padding:10px 3vw;box-sizing:border-box}
+.intro-pattern span{line-height:1}
+
+/* MOBILE */
+@media(max-width:768px){.intro::before{opacity:0.28}}
+/* REDUCED MOTION */
+@media(prefers-reduced-motion:reduce){.intro::before{animation:none}}
+
+.story{min-height:140vh;padding:0 5vw;background:var(--ivory)}
+.story-pin{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:.7fr 1.3fr;gap:5vw;align-items:center;overflow:hidden}
+.story-copy{position:relative;z-index:3}
+.story-copy h2{font-family:var(--serif);font-size:clamp(45px,6vw,86px);line-height:.95;margin:10px 0 22px}
+.story-copy p{max-width:430px;line-height:1.7}
+.story-label{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.scroll-hint{margin-top:20px;display:flex;align-items:center;gap:8px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);opacity:.8}
+.scroll-hint .arrow{animation:bounce 1.5s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+.story-frame{height:min(78vh,760px);position:relative;border-radius:8px;overflow:hidden;background:#ddd}
+.story-frame .crop{position:absolute;inset:0;opacity:0;transform:scale(1.06);transition:opacity .65s ease,transform 1.1s ease}
+.story-frame .crop.active{opacity:1;transform:scale(1)}
+.story-caption{position:absolute;z-index:4;left:18px;bottom:18px;background:rgba(255,250,241,.92);padding:13px 16px;border-radius:3px;font-family:var(--serif);font-size:20px}
+.story-progress{position:absolute;z-index:5;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:3px;color:#fff;font-family:var(--serif);font-size:17px;line-height:1}
+.story-mark{opacity:.45;transition:opacity .35s ease,transform .35s ease,color .35s ease}
+.story-mark.active{opacity:1;color:var(--gold);transform:scale(1.2)}
+
+.wall{background:var(--indigo);color:#fff7eb;overflow:hidden}
+.wall-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:32px}
+.wall h2{font-family:var(--serif);font-size:clamp(45px,6vw,80px);margin:0;line-height:.95}
+.wall-track{display:flex;gap:16px;padding-bottom:12px;scrollbar-width:none}
+.wall-track::-webkit-scrollbar{display:none}
+.wall-card{min-width:clamp(210px,23vw,330px);height:460px;scroll-snap-align:start;position:relative;border-radius:4px;overflow:hidden;background:#555}
+.wall-card img{transition:transform .5s}.wall-card:hover img{transform:scale(1.04)}
+.wall-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.7))}
+.wall-meta{position:absolute;z-index:2;left:18px;right:18px;bottom:18px}.wall-meta strong{font-family:var(--serif);font-size:24px}.wall-meta small{display:block;opacity:.8;margin-top:4px}
+
+.shop{background:var(--cream)}
+.shop-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.shop h2{font-family:var(--serif);font-size:clamp(45px,6vw,80px);line-height:.95;margin:8px 0 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;border-radius:999px;padding:10px 13px;cursor:pointer;font-size:12px}.filter.active{background:var(--ink);color:#fff}
+.shop-controls{display:flex;flex-direction:column;gap:12px;align-items:flex-end;position:relative}
+.search-row{display:flex;gap:8px;align-items:center}
+.search-input{border:1px solid var(--line);background:var(--ivory);border-radius:999px;padding:10px 16px;font-size:13px;width:280px;outline:none;transition:border-color .2s}
+.search-input:focus{border-color:var(--gold)}
+.filter-icon{width:42px;height:42px;border:1px solid var(--line);background:var(--ivory);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);transition:background .2s,color .2s}
+.filter-icon:hover{background:var(--ink);color:#fff}
+.filter-panel{position:absolute;right:0;top:calc(100% + 8px);background:var(--ivory);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.12);padding:16px;width:280px;z-index:20;display:none}
+.filter-panel.open{display:block}
+.filter-panel h4{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--crimson)}
+.filter-group{margin-bottom:14px}
+.filter-group label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink);opacity:.7;margin-bottom:6px}
+.filter-options{display:flex;gap:6px;flex-wrap:wrap}
+.filter-opt{border:1px solid var(--line);background:transparent;border-radius:999px;padding:6px 10px;font-size:11px;cursor:pointer;transition:background .2s,color .2s}
+.filter-opt.active{background:var(--ink);color:#fff}
+.filter-opt:hover{background:var(--ink);color:#fff}
+.filter-actions{display:flex;gap:8px;margin-top:10px}
+.filter-actions button{flex:1;border-radius:999px;padding:8px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid var(--line)}
+.filter-actions .apply{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+.filter-actions .clear{background:transparent;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--ivory);border:1px solid var(--line);padding:10px;opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.card.visible{opacity:1;transform:none}
+.photo{aspect-ratio:4/5;overflow:hidden;position:relative;background:#ddd}.photo img{transition:transform .5s}.card:hover .photo img{transform:scale(1.04)}
+.back{position:absolute;inset:0;opacity:0;transition:.4s}.card:hover .back{opacity:1}
+.badge{position:absolute;left:10px;top:10px;background:#fff7eb;padding:7px 9px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;border-radius:999px}
+.card-body{padding:14px 5px 5px}.card h3{font-family:var(--serif);font-size:22px;margin:0 0 7px}.price{font-weight:800;margin-bottom:12px}.card-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card-actions .mini{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:44px;padding:10px 8px;border:1px solid var(--line);border-radius:4px;text-align:center;font-size:11px;font-weight:700;line-height:1.2;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}.card-actions .mini:before{font-size:14px;line-height:1}.card-actions .mini.whatsapp{background:#233f31;color:#fff;border-color:#233f31}.card-actions .mini.whatsapp:before{content:"↗"}.card-actions .mini:not(.whatsapp){background:transparent;color:var(--ink)}.card-actions .mini:not(.whatsapp):before{content:"+"}.card-actions .mini:hover{transform:translateY(-1px)}.card-actions .mini:not(.whatsapp):hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.fit{background:#e7dcc7;overflow:hidden}
+.fit-inner{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}
+.fit h2{font-family:var(--serif);font-size:clamp(45px,5.8vw,80px);line-height:.95;margin:10px 0 20px}
+.fit-list{display:grid;gap:12px}.fit-item{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid rgba(37,38,42,.18)}
+.icon{width:45px;height:45px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:18px}
+.fit-item strong{display:block}.fit-item span{font-size:13px;opacity:.7}
+.fit-visual{min-height:430px;position:relative;display:grid;place-items:center}
+.pattern-circle{width:min(34vw,420px);height:min(34vw,420px);border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--crimson) 0 12deg,var(--mustard) 12deg 24deg,var(--sage) 24deg 36deg,var(--pink) 36deg 48deg);animation:spin 22s linear infinite;mask-image:radial-gradient(circle,black 58%,transparent 59%)}
+.fit-visual:after{content:"ALL SIZES";position:absolute;font-family:var(--serif);font-size:clamp(32px,4vw,60px);background:var(--ivory);padding:30px;border-radius:50%;box-shadow:0 15px 40px rgba(0,0,0,.08)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.reviews{background:var(--ivory)}
+.review-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.stars{color:var(--mustard);font-size:23px}.rating{font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.review-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.review-track::-webkit-scrollbar{display:none}
+.review{min-width:min(430px,80vw);background:var(--cream);border:1px solid var(--line);padding:28px;scroll-snap-align:start}.review p{font-family:var(--serif);font-size:23px;line-height:1.35;margin:0 0 25px}.review small{opacity:.65}
+
+.visit{background:var(--crimson);color:#fff8ef}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.visit h2{font-family:var(--serif);font-size:clamp(48px,6vw,84px);line-height:.92;margin:8px 0 25px}.visit p{line-height:1.7;max-width:500px}.map{min-height:430px;background:#d6ccb9;border:10px solid rgba(255,255,255,.12);position:relative;overflow:hidden}.map iframe{width:100%;height:100%;min-height:430px;border:0;filter:sepia(.15) saturate(.8)}
+.contact-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.contact-row a{background:#fff7eb;color:var(--crimson);padding:13px 17px;border-radius:999px;font-weight:800;font-size:13px}
+.instagram{margin-top:70px}.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:20px}.insta-grid a{aspect-ratio:1;overflow:hidden}.insta-grid img{transition:transform .5s}.insta-grid a:hover img{transform:scale(1.07)}
+
+footer{background:#211e20;color:#fff3e6;padding:40px 5vw;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
+footer span{opacity:.65}
+.whatsapp-float{position:fixed;z-index:30;right:22px;bottom:22px;background:#1f8f4d;color:white;padding:14px 18px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.22);font-weight:800;font-size:13px}
+.whatsapp-float:before{content:"✆";margin-right:8px}
+
+.about-section{position:relative;overflow:hidden;padding:120px 7%;background:radial-gradient(circle at 10% 20%,rgba(201,138,46,.08),transparent 28%),#f7ead7;color:#191615}
+.about-section::before{content:"✦";position:absolute;top:55px;left:4%;font-family:"Cormorant Garamond",serif;font-size:150px;color:rgba(134,27,34,.06);pointer-events:none}
+.about-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:90px;align-items:center}
+.about-visual{position:relative}
+.about-image-frame{position:relative;min-height:620px;overflow:hidden;border-radius:4px;background:#d9bd91;box-shadow:0 25px 60px rgba(70,35,15,.14)}
+.about-image-frame img{width:100%;height:100%;min-height:620px;display:block;object-fit:cover;transition:transform .8s ease,filter .8s ease}
+.about-image-frame:hover img{transform:scale(1.025)}
+.about-image-frame::after{content:"";position:absolute;inset:20px;border:1px solid rgba(255,235,193,.7);pointer-events:none}
+.about-badge{position:absolute;right:-38px;bottom:42px;width:145px;height:145px;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#c98a2e;background:#f7ead7;border:1px solid #c98a2e;box-shadow:0 12px 30px rgba(70,35,15,.12)}
+.about-badge span{font-size:8px;letter-spacing:2px}
+.about-badge strong{margin:8px 0;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:.9}
+.about-ornament{position:absolute;top:28px;left:28px;width:44px;height:44px;display:grid;place-items:center;color:#f7ead7;background:#861b22;border-radius:50%;font-size:17px}
+.about-eyebrow{margin-bottom:18px;color:#861b22;font-size:12px;font-weight:700;letter-spacing:3px}
+.about-content h2{max-width:650px;margin:0;color:#861b22;font-family:"Cormorant Garamond",serif;font-size:clamp(48px,5vw,76px);font-weight:600;line-height:.92;letter-spacing:-1.5px}
+.about-content h2 em{display:block;color:#c98a2e;font-style:italic}
+.about-divider{display:flex;align-items:center;gap:10px;margin:27px 0;color:#c98a2e}
+.about-divider span{width:55px;height:1px;background:#c98a2e}
+.about-content>p{max-width:670px;margin:0 0 15px;font-size:15px;line-height:1.7;color:#302824}
+.about-content blockquote{margin:28px 0;padding:18px 0 18px 22px;border-left:2px solid #c98a2e;color:#861b22;font-family:"Cormorant Garamond",serif;font-size:27px;font-style:italic;line-height:1.1}
+.about-content blockquote span{color:#c98a2e}
+.about-points{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;border-top:1px solid rgba(134,27,34,.18);border-bottom:1px solid rgba(134,27,34,.18)}
+.about-point{display:flex;gap:12px;padding:22px 14px}
+.about-point+.about-point{border-left:1px solid rgba(134,27,34,.18)}
+.point-number{color:#c98a2e;font-family:"Cormorant Garamond",serif;font-size:19px;font-weight:600}
+.about-point h3{margin:0 0 6px;color:#861b22;font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1}
+.about-point p{margin:0;font-size:11px;line-height:1.5}
+.about-button{display:inline-flex;align-items:center;gap:16px;margin-top:30px;padding:14px 22px;color:#fff;background:#861b22;border:1px solid #861b22;border-radius:6px;font-size:12px;font-weight:700;letter-spacing:.4px;text-decoration:none;transition:background .25s ease,transform .25s ease}
+.about-button:hover{background:#6e151b;transform:translateY(-2px)}
+.about-button span{font-size:18px}
+
+@media(max-width:1024px){
+  .about-section{padding:90px 6%}
+  .about-inner{gap:55px}
+  .about-image-frame,.about-image-frame img{min-height:520px}
+  .about-badge{right:-25px}
+  .about-points{grid-template-columns:1fr}
+  .about-point+.about-point{border-left:0;border-top:1px solid rgba(134,27,34,.18)}
+  .navlinks{display:flex;gap:16px;font-size:11px;flex-wrap:wrap}.intro,.fit-inner,.visit-grid{grid-template-columns:1fr}.story-pin{grid-template-columns:.75fr 1.25fr}.grid{grid-template-columns:repeat(2,1fr)}
+  .story-frame{height:72vh}.insta-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .intro-pattern{font-size:12px}
+  .about-section{padding:75px 22px}
+  .about-inner{grid-template-columns:1fr;gap:48px}
+  .about-image-frame,.about-image-frame img{min-height:430px}
+  .about-badge{right:15px;bottom:20px;width:110px;height:110px}
+  .about-badge strong{font-size:18px}
+  .about-content h2{font-size:clamp(45px,13vw,65px)}
+  .about-content>p{font-size:14px}
+  .about-content blockquote{font-size:24px}
+  .about-points{grid-template-columns:1fr}
+  .about-point{padding:18px 8px}
+  .about-button{width:100%;justify-content:center}
+  .section{padding:78px 5vw}.hero{min-height:88vh}.hero-content{padding-bottom:12vh}.story{min-height:240vh !important;padding:0 5vw !important}.story-pin{position:sticky !important;top:0;height:100svh !important;grid-template-columns:1fr;gap:15px;padding:80px 0 25px}.story-copy{align-self:end}.story-copy h2{font-size:48px}.story-copy p{display:block !important;font-size:14px;line-height:1.5;margin-top:8px}.story-frame{height:58svh;align-self:start}.wall-card{height:400px;min-width:70vw}.shop-top{display:block}.filters{margin-top:22px}.fit-visual{min-height:300px}.pattern-circle{width:280px;height:280px}.visit-grid{grid-template-columns:1fr}.map,.map iframe{min-height:320px}.insta-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:390px){
+  .topbar{font-size:10px}.logo{font-size:20px}.nav{padding:15px 5vw}.hero h1{font-size:clamp(40px,12.5vw,50px);max-width:330px}.hero p{font-size:15px}.btn{width:100%}.grid{grid-template-columns:1fr}.card h3{font-size:20px}.wall-card{min-width:82vw}.story-copy h2{font-size:42px}.whatsapp-float{right:12px;bottom:12px;padding:12px 15px}
+}
+@media(prefers-reduced-motion:reduce){
+  .about-image-frame img,.about-button{transition:none}
+  .about-image-frame:hover img{transform:none}
+  html{scroll-behavior:auto}.sequin,.pattern-circle{animation:none}.story-frame .crop{transition:opacity .25s ease,transform .25s ease}.card{transition:opacity .3s ease}
+}
+
+/* MOTION LAYER */
+.slow-ease{transition-timing-function:cubic-bezier(.65,0,.35,1)}
+.hero h1 .line{display:block;clip-path:inset(0 0 100% 0)}
+.wall-track .wall-card{opacity:1;transform:none}
+.section .reveal{opacity:0;transform:translateY(24px)}
+.section .reveal.in{opacity:1;transform:none}
+
+/* MOBILE LAYOUT OVERRIDES */
+
+@media (max-width: 768px){
+  /* 1. HERO CONTAINER: image keeps its natural size, text overlaid on it */
+  .hero{position:relative !important;min-height:auto !important;display:block !important;padding:0 !important;background:none !important}
+  .hero-media{position:relative !important;width:100% !important;height:auto !important}
+  .hero-media:after{content:"" !important;position:absolute !important;inset:0 !important;background:linear-gradient(180deg,rgba(24,10,6,0) 30%,rgba(24,10,6,.74) 100%) !important;pointer-events:none !important}
+
+  /* 2. HERO IMAGE: full picture visible — natural aspect, no zoom/crop */
+  .hero-media img{width:100% !important;height:auto !important;object-fit:contain !important;border-radius:0 !important}
+
+  /* 3. HERO CONTENT: compact text sits directly on the hero image */
+  .hero-content{position:absolute !important;top:auto !important;left:12px !important;right:12px !important;bottom:10px !important;transform:none !important;width:auto !important;max-width:none !important;margin:0 !important;z-index:10 !important;background:none !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;padding:0 !important;border-radius:0 !important;text-align:left !important;border:0 !important;box-shadow:none !important}
+
+  /* Typography spacing (small so it fits over the image) */
+  .hero h1{font-size:19px !important;line-height:1.15 !important;margin-bottom:5px !important;color:#fff8ef !important;text-shadow:0 2px 12px rgba(0,0,0,.6) !important}
+  .hero h1 .gold-text{color:#f0d48b !important}
+  .hero p{font-size:10.5px !important;line-height:1.35 !important;margin-bottom:8px !important;color:#f7ead9 !important;text-shadow:0 1px 6px rgba(0,0,0,.65) !important}
+
+  /* 2. HEADER & LOGO OVERFLOW */
+  .logo-spacer{width:100% !important;max-width:140px !important;height:auto !important}
+  .nav-overlay{padding:12px 16px !important;display:flex !important;justify-content:space-between !important;align-items:center !important;position:sticky !important;top:0 !important;flex-wrap:wrap;gap:8px}
+  .nav-icon svg{width:18px !important;height:18px !important}
+  .navlinks{display:flex !important;gap:4px;font-size:9px;order:3;width:100%;flex-wrap:nowrap !important;overflow-x:auto;scrollbar-width:none;padding-top:8px;border-top:1px solid var(--line)}
+  .navlinks a{padding:2px 6px;white-space:nowrap;flex-shrink:0}
+
+  /* NAV ORDER: hamburger left, logo centered, bag right; WhatsApp icon hidden (float button covers it) */
+  .nav-actions a.nav-icon{display:none !important}
+  .nav-overlay .menu-toggle{order:1 !important;margin-left:0 !important}
+  .nav-overlay .logo-spacer{order:2 !important;margin:0 auto !important}
+  .nav-overlay .nav-actions{order:3 !important;margin-left:0 !important}
+
+  /* 3. BUTTONS & FLOATING ELEMENTS */
+  .actions{display:flex !important;flex-direction:row !important;gap:8px !important;width:100% !important}
+  .actions .btn{width:auto !important;flex:1 1 0 !important;min-height:36px !important;padding:7px 8px !important;font-size:11px !important}
+  .actions .btn.gold{color:#fff8ef !important;border-color:rgba(255,248,237,.85) !important}
+
+  /* Compact floating WhatsApp icon/pill anchored to avoid blocking body text */
+  .whatsapp-float{right:12px !important;bottom:12px !important;padding:10px 14px !important;font-size:11px !important;border-radius:50px !important;box-shadow:0 4px 12px rgba(0,0,0,.18) !important}
+}
+
+/* ============ PREMIUM UPGRADES ============ */
+
+/* 3. CUSTOM AESTHETIC CURSOR + MAGNETIC EFFECTS */
+/* 3D tilt card */
+.card{will-change:transform}
+.card.tilt-ready{transition:transform .12s cubic-bezier(.65,0,.35,1),box-shadow .35s ease;transform-style:preserve-3d}
+.card.tilt-ready:hover{box-shadow:0 26px 60px rgba(0,0,0,.16)}
+
+/* 1. INTERACTIVE FABRIC TEXTURE MAGNIFIER (canvas ripple-vision) */
+#fabricLens{position:fixed;top:0;left:0;width:230px;height:245px;margin:-122px 0 0 -115px;pointer-events:none;z-index:9000;display:none;border-radius:50%;box-shadow:0 24px 70px rgba(0,0,0,.42),0 0 0 1px rgba(184,139,43,.6),0 0 70px rgba(184,139,43,.24),inset 0 0 50px rgba(255,220,170,.18)}
+body.lens-on #fabricLens{display:block}
+.photo{transform-style:preserve-3d}
+
+/* 4. EXPANDABLE FIT VISUALIZER */
+.fit-zone{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
+.fit-fig{width:min(100%,300px)}
+.fit-fig svg{width:100%;height:auto;overflow:visible;filter:drop-shadow(0 20px 30px rgba(60,30,5,.18))}
+.fit-flape{position:absolute;top:6%;right:4%;background:var(--ivory);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;box-shadow:0 10px 24px rgba(0,0,0,.1);z-index:3}
+.fit-flape b{color:var(--crimson)}
+.fit-slider-row{display:flex;align-items:center;gap:14px;width:min(100%,330px)}
+.s-type-chip{min-width:46px;text-align:center;font-family:var(--serif);font-size:26px;color:var(--crimson);font-weight:700}
+.fit-slider-row input[type=range]{flex:1;-webkit-appearance:none;appearance:none;height:5px;border-radius:99px;background:linear-gradient(90deg,var(--gold) 0%,var(--crimson) 100%);outline:none}
+.fit-slider-row input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid var(--crimson);box-shadow:0 4px 12px rgba(0,0,0,.22);cursor:pointer;transition:transform .2s}
+.fit-slider-row input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+.fit-slider-row input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid var(--crimson);cursor:pointer}
+.fit-step{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);opacity:.6;display:flex;justify-content:space-between;width:min(100%,330px);padding:0 4px}
+.fit-status{font-size:13px;max-width:330px;line-height:1.55;color:#4a3b32;text-align:center}
+.fit-status b{color:var(--crimson)}
+
+/* 5. MORPHING QUICK-VIEW MODAL */
+.qm{position:fixed;inset:0;z-index:100;display:grid;place-items:center;visibility:hidden}
+.qm-backdrop{position:absolute;inset:0;background:rgba(20,16,14,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;transition:opacity .45s ease}
+.qm-panel{position:relative;width:min(880px,94vw);max-height:86vh;display:grid;grid-template-columns:1fr;gap:0;overflow:hidden;border-radius:18px;background:var(--cream);box-shadow:0 40px 130px rgba(0,0,0,.45);transform:scale(.9) translateY(16px);opacity:0;transition:transform .55s cubic-bezier(.65,0,.35,1),opacity .3s ease}
+.qm.open{visibility:visible}
+.qm.open .qm-backdrop{opacity:1}
+.qm.open .qm-panel{opacity:1;transform:none}
+.qm-img{position:relative;min-height:420px;background:#181818;overflow:hidden}
+.qm-img img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:opacity .4s ease}
+.qm-img img.qm-img-back{opacity:0}
+.qm-img:hover img.qm-img-back{opacity:1}
+.qm-content{padding:38px 34px;display:flex;flex-direction:column;justify-content:center;gap:14px;overflow:auto}
+.qm-content h3{font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);margin:0;line-height:1.05}
+.qm-price{font-size:24px;font-weight:800;color:var(--crimson)}
+.qm-meta{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.qm-desc{font-size:14px;line-height:1.7;opacity:.85;margin:0}
+.qm-size-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.qm-size-pill{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;background:#fffdf6;cursor:pointer}
+.qm-size-pill.hot{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+.qm-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.qm-actions .btn{flex:1;min-width:150px;padding:13px 16px}
+.qm-actions .mini{flex:1;min-width:120px;background:#fffdf6}
+.qm-x{position:absolute;top:14px;right:14px;z-index:6;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.28);color:#fff;font-size:15px;display:grid;place-items:center;cursor:pointer;transition:background .2s,transform .35s}
+.qm-x:hover{background:rgba(0,0,0,.55);transform:rotate(90deg)}
+/* Desktop quick-view: compact side-by-side layout so all details fit on screen */
+@media(min-width:761px){
+  .qm-panel{grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:min(840px,92vw)}
+  .qm-img{min-height:0;height:100%}
+  .qm-content{padding:30px 28px;gap:11px;overflow-y:auto}
+  .qm-content h3{font-size:clamp(22px,2.2vw,28px)}
+  .qm-price{font-size:21px}
+  .qm-desc{font-size:13px;line-height:1.6}
+  .qm-size-pill{width:36px;height:36px;font-size:11px}
+  .qm-actions{margin-top:4px}
+  .qm-actions .btn{min-width:130px;padding:11px 14px;font-size:12px}
+  .qm-x{top:10px;right:10px;width:34px;height:34px}
+}
+.cart-drawer{position:fixed;inset:0;z-index:110;visibility:hidden}.cart-drawer-backdrop{position:absolute;inset:0;background:rgba(20,16,14,.45);opacity:0;transition:opacity .3s}.cart-drawer-panel{position:absolute;top:0;right:0;width:min(420px,92vw);height:100%;padding:28px 24px;background:var(--ivory);box-shadow:-20px 0 70px rgba(0,0,0,.2);transform:translateX(105%);transition:transform .4s cubic-bezier(.65,0,.35,1);display:flex;flex-direction:column}.cart-drawer.open{visibility:visible}.cart-drawer.open .cart-drawer-backdrop{opacity:1}.cart-drawer.open .cart-drawer-panel{transform:none}.cart-drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.cart-drawer-head h2{font-family:var(--serif);font-size:34px;font-weight:400;margin:0}.cart-drawer-close{width:40px;height:40px;border:1px solid var(--line);background:transparent;border-radius:50%;font-size:18px;cursor:pointer}.cart-items{display:grid;gap:12px;overflow:auto;padding:20px 0;flex:1}.cart-empty{font-family:var(--serif);font-size:24px;opacity:.65;padding-top:30px}.cart-item{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--line)}.cart-item img{width:64px;height:78px;object-fit:cover;background:#ddd}.cart-item strong{font-family:var(--serif);font-size:18px;font-weight:400}.cart-item small{display:block;margin-top:5px;opacity:.65}.cart-remove{border:0;background:transparent;color:var(--crimson);cursor:pointer;font-size:18px}.cart-total{border-top:1px solid var(--line);padding-top:18px}.cart-total-row{display:flex;justify-content:space-between;font-weight:800;margin-bottom:14px}.cart-checkout{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;background:var(--crimson);color:#fff;border:0;border-radius:4px;font-weight:800;cursor:pointer}.cart-checkout:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:760px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .qm-img{min-height:300px}
+  .qm-content{padding:26px 20px}
+}
+@media(max-width:768px){
+  .logo-spacer{width:56px!important;max-width:56px!important;height:56px!important;flex:0 0 56px}
+  .story{min-height:auto!important;padding:40px 5vw!important}
+  .story-pin{position:relative!important;top:auto;height:auto!important;grid-template-columns:1fr;gap:15px;padding:40px 0 25px}
+  .card-actions{grid-template-columns:1fr;gap:8px}
+  .card-actions .mini{width:100%;min-height:46px;border-radius:4px;padding:12px 14px;font-size:12px}
+  .card-body{padding-left:2px;padding-right:2px}
+  .card h3{font-size:18px}
+}
+
+/* RAZA fashion-film layer */
+:root{--room:#a51f2a;--room-soft:#f1d7c8;--room-ink:#fff8ed}
+.pattern-band{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:22px;overflow:hidden;padding:15px 5vw;color:var(--gold);font-family:var(--serif);font-size:18px;letter-spacing:.3em;white-space:nowrap;border-top:1px solid currentColor;border-bottom:1px solid currentColor}
+.pattern-band span{text-align:center}
+.pattern-band span:nth-child(2n){color:var(--crimson)}
+.colour-room{background:var(--room);color:var(--room-ink);overflow:hidden;transition:background-color .6s ease}
+.colour-room .kicker{color:#f2d38d}.colour-room h2{font-family:var(--serif);font-size:clamp(52px,8vw,118px);line-height:.8;margin:10px 0 18px}
+.colour-intro{display:grid;grid-template-columns:1fr .65fr;gap:8vw;align-items:end;margin-bottom:42px}.colour-intro p{max-width:390px;line-height:1.7;opacity:.82}
+.colour-options{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 34px}.colour-option{appearance:none;border:1px solid rgba(255,248,237,.45);background:transparent;color:inherit;padding:12px 16px;border-radius:999px;cursor:pointer;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.colour-option[aria-selected="true"]{background:#fff8ed;color:var(--room);border-color:#fff8ed}
+.colour-stage{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:18px;align-items:stretch}.colour-visual{min-height:540px;position:relative;overflow:hidden;background:#402022}.colour-visual img{transition:opacity .45s ease,transform .8s ease}.colour-visual.is-changing img{opacity:.3;transform:scale(1.04)}.colour-note{position:absolute;left:22px;bottom:22px;font-family:var(--serif);font-size:clamp(28px,3vw,50px);line-height:.9}.colour-copy{display:flex;flex-direction:column;justify-content:flex-end;padding:12px 0 22px}.colour-copy strong{font-family:var(--serif);font-size:clamp(34px,4vw,64px);font-weight:400}.colour-copy p{max-width:290px;line-height:1.6;opacity:.78}
+.macro{background:#181716;color:#fff8ed}.macro-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:8vw;align-items:center}.macro h2,.look h2{font-family:var(--serif);font-size:clamp(52px,7vw,100px);line-height:.82;margin:12px 0 22px}.macro p{max-width:330px;line-height:1.7;opacity:.72}.macro-image{position:relative;min-height:600px;overflow:hidden;background:#3b2b20}.macro-image img{object-position:center;transform:scale(1.08)}.macro-image:after{content:"MOVE CLOSER";position:absolute;right:18px;top:18px;padding:10px 12px;border:1px solid rgba(255,248,237,.55);font-size:10px;letter-spacing:.16em}.macro-labels{display:grid;gap:16px;margin-top:28px}.macro-label{display:flex;gap:10px;align-items:center;color:#eacb84;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.macro-label i{font-style:normal;font-size:18px}.macro-lens{position:absolute;width:180px;height:180px;border:1px solid rgba(255,248,237,.8);border-radius:50%;pointer-events:none;opacity:0;background-image:var(--macro-image);background-size:220%;background-position:var(--lens-x,50%) var(--lens-y,50%);box-shadow:0 12px 35px rgba(0,0,0,.35),inset 0 0 0 8px rgba(255,248,237,.08);transition:opacity .25s ease}
+.look{background:var(--ivory);overflow:hidden}.look-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.look-head p{max-width:320px;line-height:1.6}.look-stage{position:relative;min-height:min(760px,78vh);background:#c3a17d;overflow:hidden}.look-stage img{object-position:center 30%;transition:transform .8s}.look-stage:hover img{transform:scale(1.025)}.hotspot{position:absolute;z-index:2;width:42px;height:42px;border:1px solid #fff;background:var(--crimson);color:#fff;border-radius:50%;font-size:21px;cursor:pointer;box-shadow:0 0 0 8px rgba(255,255,255,.18);transition:transform .25s}.hotspot:hover,.hotspot:focus-visible{transform:scale(1.15)}.hotspot-card{position:absolute;z-index:3;left:24px;bottom:24px;width:min(320px,calc(100% - 48px));padding:18px;background:rgba(255,250,241,.94);color:var(--ink);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s}.hotspot-card.open{opacity:1;transform:none;pointer-events:auto}.hotspot-card strong{font-family:var(--serif);font-size:26px}.hotspot-card p{font-size:13px;line-height:1.5;margin:8px 0}.hotspot-card button{border:0;background:var(--crimson);color:#fff;padding:10px 13px;cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.visit{position:relative;background:#6d1720}.visit:before{content:"SEE IT. FEEL IT. TRY IT.";display:block;margin-bottom:58px;font-family:var(--serif);font-size:clamp(34px,5vw,76px);line-height:.9;color:#f2d38d}
+@media(max-width:768px){.colour-intro,.colour-stage,.macro-grid{grid-template-columns:1fr}.colour-visual{min-height:62svh}.macro-image{min-height:58svh}.look-head{display:block}.look-stage{min-height:70svh}.hotspot{width:38px;height:38px}.visit:before{margin-bottom:36px}}
+@media(prefers-reduced-motion:reduce){.colour-visual img,.look-stage img{transition:none}}
+@media(max-width:768px){.filter,.filter-opt,.mini,.btn,.filter-icon{min-height:44px}.filter-icon{width:44px;height:44px}}
+@media(max-width:768px){
+  .wall{padding:48px 5vw 64px}
+  .wall-head{display:block;margin-bottom:24px}
+  .wall-head>div:last-child{max-width:34rem!important;margin-top:16px;font-size:13px!important;line-height:1.55!important}
+  .wall h2{font-size:clamp(48px,16vw,68px)}
+  .wall-track{gap:12px}
+}
+@media(max-width:768px){
+  .shop-controls .filters{width:100%;display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;justify-content:flex-start;gap:8px;padding:2px 2px 8px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+  .shop-controls .filters::-webkit-scrollbar{height:4px}
+  .shop-controls .filters::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+  .shop-controls .filter{flex:0 0 auto;white-space:nowrap}
+}
+.mobile-nav{display:none}
+@media(max-width:768px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:0;right:0;bottom:0;z-index:80;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(255,250,241,.96);border-top:1px solid var(--line);box-shadow:0 -10px 28px rgba(37,24,18,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .mobile-nav a,.mobile-nav button{display:flex;min-width:0;min-height:52px;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#6f625a;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .mobile-nav button{border:0;background:transparent;padding:0;cursor:pointer}
+  .mobile-nav a svg,.mobile-nav button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .mobile-nav a.active,.mobile-nav button.active{color:var(--crimson)}
+  .mobile-nav a.active svg,.mobile-nav button.active svg{stroke-width:2.2}
+  .whatsapp-float{bottom:calc(84px + env(safe-area-inset-bottom)) !important}
+  .cart-drawer-panel{width:100%;padding:24px 18px}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:auto;border:1px solid var(--line);border-radius:4px;background:var(--ivory);color:var(--ink);cursor:pointer}
+  .menu-toggle svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+  .nav-overlay.menu-open .menu-toggle{background:var(--ink);color:#fff}
+  .nav-overlay .navlinks,.nav-overlay.menu-open .navlinks{position:absolute;left:0;right:0;top:100%;z-index:5;display:none!important;flex-direction:column;gap:0;padding:8px 16px 14px;background:rgba(255,250,241,.98);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(37,24,18,.1);overflow:visible}
+  .nav-overlay.menu-open .navlinks{display:flex!important}
+  .nav-overlay .navlinks a{padding:13px 4px;border-bottom:1px solid var(--line);font-size:11px}
+  .nav-overlay .navlinks a:last-child{border-bottom:0}
+}
+
+/* LOGO ANIMATION: one-time jump + 360° spin on load, spin on hover/tap */
+@keyframes logo-jump-spin{
+  0%{transform:translateY(0) rotate(0deg)}
+  30%{transform:translateY(-14px) rotate(150deg)}
+  55%{transform:translateY(0) rotate(310deg)}
+  70%{transform:translateY(-5px) rotate(345deg)}
+  85%{transform:translateY(0) rotate(360deg)}
+  100%{transform:translateY(0) rotate(360deg)}
+}
+@keyframes logo-hover-spin{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+.logo-spacer img{animation:logo-jump-spin 1.15s cubic-bezier(.45,0,.35,1) .9s 1 both}
+.logo-spacer:hover img,.logo-spacer:focus-visible img{animation:logo-hover-spin .8s ease}
+@media(prefers-reduced-motion:reduce){.logo-spacer img{animation:none !important}.logo-spacer:hover img{animation:none !important}}
+</style>
+</head>
+<body id="top">
+
+<!-- Fabric Texture Magnifier Lens (canvas) -->
+<div id="fabricLens"><canvas id="lensCanvas" width="460" height="490"></canvas></div>
+
+<!-- Morphing Quick-View Modal -->
+<div class="qm" id="quickModal" role="dialog" aria-modal="true" aria-label="Product quick view">
+  <div class="qm-backdrop" data-qm-close></div>
+  <div class="qm-panel">
+    <button class="qm-x" data-qm-close aria-label="Close quick view">✕</button>
+    <div class="qm-img">
+      <img id="qmImgMain" src="" alt="">
+      <img id="qmImgBack" class="qm-img-back" src="" alt="">
+    </div>
+    <div class="qm-content">
+      <div class="kicker">Quick view</div>
+      <h3 id="qmTitle">—</h3>
+      <div class="qm-price" id="qmPrice">—</div>
+      <div class="qm-meta" id="qmMeta">Ready to try in store · All sizes available</div>
+      <p class="qm-desc" id="qmDesc">Hand-finished ready-made blouse with expandable fit. All sizes available in store — message us for the current stock.</p>
+      <div class="qm-size-row">
+        <button class="qm-size-pill" type="button" data-size="34">34</button>
+        <button class="qm-size-pill" type="button" data-size="36">36</button>
+        <button class="qm-size-pill hot" type="button" data-size="38">38</button>
+        <button class="qm-size-pill" type="button" data-size="40">40</button>
+        <button class="qm-size-pill" type="button" data-size="42">42</button>
+      </div>
+      <div class="qm-actions">
+        <a class="btn primary" id="qmWhatsapp" href="https://wa.me/919664349959" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <button class="mini" id="qmAddCart">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+  <div class="cart-drawer-backdrop" data-cart-close></div>
+  <div class="cart-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-drawer-head"><h2 id="cartTitle">Your bag</h2><button class="cart-drawer-close" data-cart-close aria-label="Close shopping bag">&#10005;</button></div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Your bag is waiting.</p></div>
+    <div class="cart-total"><div class="cart-total-row"><span>Total</span><span id="cartTotal">₹0</span></div><button class="cart-checkout" id="cartCheckout" disabled>Continue on WhatsApp</button></div>
+  </div>
+</aside>
+
+<div class="topbar" aria-label="Store information"><div class="topbar-track"><span>Hand-finished in Mumbai · All sizes available · Expandable fit · Tailoring support</span><span aria-hidden="true">Hand-finished in Mumbai · All sizes available · Expandable fit · Tailoring support</span></div></div>
+
+<header class="nav-overlay">
+  <a class="logo-spacer" href="#top" aria-label="RAZA Garment home"><img src="image/raza_garment%20logo.webp" alt="RAZA Garment logo"></a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="primaryNavigation" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav class="navlinks" id="primaryNavigation">
+    <a href="#wall">The Wall</a>
+    <a href="#collection">Collection</a>
+    <a href="#fit">Size & Fit</a>
+    <a href="#about">About Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Contacts</a>
+    
+  </nav>
+  <div class="nav-actions">
+    <a class="nav-icon" href="https://wa.me/919664349959?text=Hello%20RAZA%20GARMENT" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+    <button class="nav-icon" id="cartOpen" type="button" aria-label="Shopping Bag" aria-controls="cartDrawer" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero noise">
+  <div class="hero-media">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide"><img src="image/hero image.webp" alt="Raza Garment hero background"></div>
+      <div class="hero-slide"><img src="image/hero_image2.webp" alt="Raza Garment blouse collection"></div>
+      <div class="hero-slide"><img src="image/hero_image3.webp" alt="Hand-finished blouse detail"></div>
+      <div class="hero-slide"><img src="image/hero_image4.webp" alt="Traditional Indian textile at Raza Garment"></div>
+      <div class="hero-slide"><img src="image/hero_image5.webp" alt="Raza Garment festive collection"></div>
+    </div>
+  </div>
+
+   <div class="hero-content">
+    <h1>
+      <span class="line">Hand-finished</span>
+      <span class="line">blouses,</span>
+      <span class="gold-text line">made to fit<br>every size.</span>
+    </h1>
+    <p>Rich prints. Mirror work. Traditional craftsmanship.<br>All sizes available. Expandable fit.</p>
+    <div class="actions">
+      <a class="btn primary" href="#collection">Shop the Collection</a>
+      <a class="btn gold" href="https://wa.me/919664349959?text=Hello%20RAZA%20GARMENT">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section intro">
+  <div><div class="kicker">Made for the way you wear</div><div class="display">A little more craft in every seam.</div></div>
+  <div class="lede">RAZA GARMENT brings the feel of a colorful Mumbai boutique online: tactile prints, small hand-finished details and practical fit options. Browse first, then chat with us for sizing, alterations or an order.</div>
+  <div class="intro-pattern" id="introPattern" aria-hidden="true"></div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-pin">
+    <div class="story-copy">
+      <div class="kicker">A closer look</div>
+      <h2>The details are the story.</h2>
+      <p>Scroll through the work — from hand embroidery to reflective mirrors and crisp contrast piping.</p>
+      <div class="story-label" id="storyLabel">Hand-embroidered</div>
+      <div class="scroll-hint"><span>Scroll to explore</span><span class="arrow">↓</span></div>
+    </div>
+    <div class="story-frame" id="storyFrame">
+      <div class="crop active"><img src="https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg" alt="Yellow embroidered mirror-work blouse detail"></div>
+      <div class="crop"><img src="https://www.sakhifashions.com/cdn/shop/files/BL-217095_Red_Cutwork_Blouse.jpg" alt="Red embroidered blouse detail"></div>
+      <div class="crop"><img src="https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200" alt="Printed blouse detail with tie-back"></div>
+      <div class="story-caption" id="storyCaption">Hand-embroidered</div>
+      <div class="story-progress" aria-hidden="true"><span class="story-mark active">✦</span><span class="story-mark">·</span><span class="story-mark">✦</span><span class="story-mark">·</span><span class="story-mark">✦</span><span class="story-mark">·</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-band" aria-hidden="true"><span>✦ · ✦ · ◇ · ✦ ·</span><span>✦ · ◇ · ✦ · ✦ ·</span><span>· ✦ ❋ ✦ · ◇ ·</span></div>
+
+<section class="section wall" id="wall">
+  <div class="wall-head"><div><div class="kicker" style="color:#f0d48b">Color lives here</div><h2>The Wall</h2></div><div style="max-width:380px;opacity:.75;line-height:1.6;font-size:14px">A rack of reds, turmeric yellows, indigos, charcoal prints and soft pastels — arranged like a real boutique shelf.</div></div>
+  <div class="wall-track">
+    <a class="wall-card" href="#collection"><img src="https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445" alt=""><div class="wall-meta"><strong>Crimson Kalamkari</strong><small>Print family · Festive</small></div></a>
+    <a class="wall-card" href="#collection"><img src="https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg" alt=""><div class="wall-meta"><strong>Turmeric Mirrorwork</strong><small>Handwork · Brights</small></div></a>
+    <a class="wall-card" href="#collection"><img src="image/raza_garment5.webp" alt=""><div class="wall-meta"><strong>Ajrakh Red</strong><small>Block print · Cotton</small></div></a>
+    <a class="wall-card" href="#collection"><img src="image/raza_garment2.webp" alt=""><div class="wall-meta"><strong>Bandhani Yellow</strong><small>Contrast · Tie-back</small></div></a>
+    <a class="wall-card" href="#collection"><img src="image/raza_garment4.webp" alt=""><div class="wall-meta"><strong>Maroon Garden</strong><small>Floral · Everyday</small></div></a>
+  </div>
+</section>
+
+<section class="section shop" id="collection">
+  <div class="shop-top">
+    <div><div class="kicker">Browse the rack</div><h2>Shop the collection</h2></div>
+    <div class="shop-controls">
+      <div class="search-row">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search blouses...">
+        <button class="filter-icon" id="filterIcon" aria-label="Filter options">⚙</button>
+      </div>
+      <div class="filter-panel" id="filterPanel">
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <div class="filter-options" id="priceFilter">
+            <button class="filter-opt active" data-price="all">All</button>
+            <button class="filter-opt" data-price="under2000">Under ₹2,000</button>
+            <button class="filter-opt" data-price="2000to2500">₹2,000 – ₹2,500</button>
+            <button class="filter-opt" data-price="over2500">Over ₹2,500</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Color</h4>
+          <div class="filter-options" id="colorFilter">
+            <button class="filter-opt active" data-color="all">All</button>
+            <button class="filter-opt" data-color="red">Red</button>
+            <button class="filter-opt" data-color="yellow">Yellow</button>
+            <button class="filter-opt" data-color="blue">Indigo</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Style</h4>
+          <div class="filter-options" id="styleFilter">
+            <button class="filter-opt active" data-style="all">All</button>
+            <button class="filter-opt" data-style="mirror">Mirrorwork</button>
+            <button class="filter-opt" data-style="printed">Printed</button>
+            <button class="filter-opt" data-style="sequin">Sequin</button>
+            <button class="filter-opt" data-style="tieback">Tie-back</button>
+            <button class="filter-opt" data-style="piping">Piping</button>
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button class="clear" id="clearFilters">Clear</button>
+          <button class="apply" id="applyFilters">Apply</button>
+        </div>
+      </div>
+      <div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="red">Reds</button><button class="filter" data-filter="yellow">Yellows</button><button class="filter" data-filter="blue">Indigo</button><button class="filter" data-filter="mirror">Mirrorwork</button><button class="filter" data-filter="printed">Printed</button><button class="filter" data-filter="kalamkari">Kalamkari</button><button class="filter" data-filter="sequin">Sequin</button><button class="filter" data-filter="tieback">Tie-back</button><button class="filter" data-filter="piping">Piping</button></div>
+    </div>
+  </div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="section fit" id="fit">
+  <div class="fit-inner">
+    <div><div class="kicker">Fit without fuss</div><h2>Because every body deserves the right blouse.</h2><p class="lede">Choose a stocked size, ask about expandable fit, or message us for tailoring. We make the online part feel as personal as the shop.</p>
+      <div class="fit-list">
+        <div class="fit-item"><div class="icon">✓</div><div><strong>All sizes stocked</strong><span>Ask us what is ready to dispatch.</span></div></div>
+        <div class="fit-item"><div class="icon">↔</div><div><strong>Expandable fit</strong><span>Selected styles carry extra allowance.</span></div></div>
+        <div class="fit-item"><div class="icon">✦</div><div><strong>Tailoring available</strong><span>Message us for alteration support.</span></div></div>
+      </div>
+    </div>
+    <div class="fit-visual"><div class="pattern-circle"></div></div>
+  </div>
+</section>
+
+<section class="about-section" id="about" aria-labelledby="about-title">
+  <div class="about-inner">
+
+    <!-- Image / Textile Story -->
+    <div class="about-visual">
+      <div class="about-image-frame">
+        <img
+          src="image/about_us.webp"
+          alt="Colorful hand-finished blouses and traditional Indian textile details at RAZA GARMENT"
+        />
+
+        <div class="about-ornament" aria-hidden="true">
+          ✦
+        </div>
+
+        <div class="about-badge">
+          <span>THE ART</span>
+          <strong>OF THE<br>BLOUSE</strong>
+          <span>✦ RAZA GARMENT ✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+
+      <div class="about-eyebrow">
+        ✦ OUR STORY ✦
+      </div>
+
+      <h2 id="about-title">
+        Where tradition meets
+        <em>the perfect fit.</em>
+      </h2>
+
+      <div class="about-divider">
+        <span></span>
+        ✦
+        <span></span>
+      </div>
+
+      <p>
+        RAZA GARMENT is a women’s ready-made blouse boutique in
+        Kandivali West, Mumbai, created for women who love the beauty
+        of traditional Indian craftsmanship with the ease of a
+        ready-to-wear fit.
+      </p>
+
+      <p>
+        From rich Kalamkari prints and mirror-work embroidery to
+        sequin borders, contrast piping and carefully finished
+        tie-back necklines, every blouse is selected with an eye
+        for detail, colour and craftsmanship.
+      </p>
+
+      <p>
+        We believe a beautiful blouse should not be limited by size.
+        That is why we offer all sizes with expandable fits and
+        tailoring assistance, helping every woman find something
+        that feels made for her.
+      </p>
+
+      <p>
+        From our boutique in Mumbai to your wardrobe, RAZA GARMENT
+        brings together colour, craftsmanship and comfort —
+        one blouse at a time.
+      </p>
+
+      <blockquote>
+        “Made with care. Chosen with love.
+        <span>Made to fit every woman.</span>”
+      </blockquote>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span class="point-number">01</span>
+          <div>
+            <h3>Traditional Craftsmanship</h3>
+            <p>
+              Rich prints, embroidery and hand-finished details.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="point-number">02</span>
+          <div>
+            <h3>Made for Every Size</h3>
+            <p>
+              All sizes available with expandable-fit options.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="point-number">03</span>
+          <div>
+            <h3>From Mumbai, With Love</h3>
+            <p>
+              A local boutique serving women with carefully
+              selected blouses.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#collection" class="about-button">
+        DISCOVER THE COLLECTION
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="review-head"><div><div class="kicker">Loved in the neighborhood</div><h2 class="display">5.0★ on Google</h2></div><div class="rating"><div class="stars">★★★★★</div>Google reviews · Kandivali West</div></div>
+  <div class="review-track">
+    <article class="review"><p>“Beautiful finishing and so many colors to choose from. The fitting advice made the purchase easy.”</p><small>Google customer · Kandivali</small></article>
+    <article class="review"><p>“The mirror and sequin work looks even better in person. Helpful staff and quick WhatsApp replies.”</p><small>Google customer · Mumbai</small></article>
+    <article class="review"><p>“Loved that they had sizes beyond the usual range and helped with a small alteration.”</p><small>Google customer · Kandivali West</small></article>
+    <article class="review"><p>“Rich prints, neat piping and a proper boutique feel. Will definitely come back.”</p><small>Google customer · Mumbai</small></article>
+  </div>
+</section>
+
+<section class="section visit" id="visit">
+  <div class="visit-grid">
+    <div><div class="kicker" style="color:#f2d38d">Come see the wall</div><h2>Visit RAZA GARMENT.</h2><p>Azadh Compound, Kandivali West, Mumbai. Drop in to browse colors, check fit and see the hand-finished details up close.</p>
+      <div class="contact-row"><a href="tel:+919664349959">Call us</a><a href="https://wa.me/919664349959">WhatsApp</a><a href="https://www.instagram.com/">Instagram</a></div>
+      <p style="margin-top:28px;font-size:13px;opacity:.8"><strong>Store hours</strong><br>Mon–Sun · 10:30 AM–9:00 PM<br><br><strong>Trust signals</strong><br>Handmade in Mumbai · Size exchange policy · WhatsApp ordering</p>
+    </div>
+    <div class="map"><iframe title="Map to Azadh Compound, Kandivali West" src="https://www.google.com/maps?q=Azadh%20Compound%2C%20Kandivali%20West%2C%20Mumbai&output=embed" loading="lazy"></iframe></div>
+  </div>
+  <div class="instagram"><div class="kicker" style="color:#f2d38d">Latest drops</div><h3 style="font-family:var(--serif);font-size:32px;margin:8px 0">Follow the rack on Instagram</h3>
+    <div class="insta-grid">
+      <a href="https://www.instagram.com/"><img src="https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="https://myposhaakh.com/cdn/shop/files/IMG_4088_7c406bb-e96d-471a-bc94-bf3d5b244de9_1080x.jpg?v=1745488140" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="https://designerblouse.co/cdn/shop/files/yellow-blouse.jpg" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<footer><strong>RAZA GARMENT</strong><span>Women’s ready-made blouse boutique · Kandivali West, Mumbai</span><span>© 2026 Raza Garment</span></footer>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a class="active" href="#top" aria-label="Go to home"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg><span>Home</span></a>
+  <a href="#collection" aria-label="Browse collection"><svg viewBox="0 0 24 24"><path d="M4 7h16l-1 14H5L4 7Z"/><path d="M8 7a4 4 0 0 1 8 0"/></svg><span>Collection</span></a>
+  <a href="#story" aria-label="Explore the story"><svg viewBox="0 0 24 24"><path d="M12 3 14 9l6 3-6 3-2 6-2-6-6-3 6-3 2-6Z"/></svg><span>Story</span></a>
+  <a href="#visit" aria-label="Visit Raza Garment"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Visit</span></a>
+  <button type="button" id="mobileCartOpen" aria-label="View shopping bag" aria-controls="cartDrawer" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span>Bag</span></button>
+</nav>
+<a class="whatsapp-float" href="https://wa.me/919664349959?text=Hello%20RAZA%20GARMENT%2C%20I%27d%20like%20help%20choosing%20a%20blouse." aria-label="WhatsApp Raza Garment">Order on WhatsApp</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+
+const products=[
+ {name:"Crimson Kalamkari",price:"₹1,850",priceNum:1850,tags:["red","printed","kalamkari"],img:"https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445",back:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200"},
+ {name:"Turmeric Mirrorwork",price:"₹2,250",priceNum:2250,tags:["yellow","mirror"],img:"https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg",back:"https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg"},
+ {name:"Ajrakh Garden",price:"₹1,950",priceNum:1950,tags:["red","printed"],img:"image/raza_garment5.webp",back:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200"},
+ {name:"Maroon Contrast",price:"₹1,750",priceNum:1750,tags:["red","printed","piping"],img:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200",back:"https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445"},
+ {name:"Indigo Piping",price:"₹1,900",priceNum:1900,tags:["blue","piping"],img:"https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445",back:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200"},
+ {name:"Bandhani Bloom",price:"₹2,100",priceNum:2100,tags:["yellow","mirror","tieback"],img:"https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg",back:"https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg"},
+ {name:"Sage Sequin Border",price:"₹2,350",priceNum:2350,tags:["blue","mirror","sequin"],img:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200",back:"https://api.ruffletrends.com/ruffle/api/images/women/ready-wear-blouses/4268197a-11be-4db4-967e-cce6580c37f0_large.jpeg"},
+ {name:"Kalamkari Tie-Back",price:"₹1,995",priceNum:1995,tags:["red","printed","kalamkari","tieback"],img:"https://www.jelda.in/cdn/shop/files/e574d069-cc19-4880-a44d-618b118e6a0f.jpg?v=1753706047&width=1445",back:"https://loomslegacy.com/cdn/shop/files/20240510-113542.jpg?v=1715322983&width=1200"}
+];
+
+const imageFallback="image/raza_garment.webp";
+function useImageFallback(image){
+  if(image.dataset.fallbackApplied)return;
+  image.dataset.fallbackApplied="true";
+  image.src=imageFallback;
+}
+document.querySelectorAll("img").forEach(image=>{
+  image.addEventListener("error",()=>useImageFallback(image));
+  if(image.complete&&!image.naturalWidth)useImageFallback(image);
+});
+
+const grid=document.getElementById("productGrid");
+let currentFilter="all";
+function render(filter="all"){
+ currentFilter=filter;
+ const q=document.getElementById("searchInput").value.toLowerCase();
+ grid.innerHTML=products.filter(p=>(filter==="all"||p.tags.includes(filter))&&(!q||p.name.toLowerCase().includes(q))&&(priceSel==="all"||(priceSel==="under2000"&&p.priceNum<2000)||(priceSel==="2000to2500"&&p.priceNum>=2000&&p.priceNum<=2500)||(priceSel==="over2500"&&p.priceNum>2500))&&(colorSel==="all"||p.tags.includes(colorSel))&&(styleSel==="all"||p.tags.includes(styleSel))).map((p,i)=>`
+ <article class="card" style="transition-delay:${i*80}ms">
+  <div class="photo"><img src="${p.img}" alt="${p.name}" onerror="this.onerror=null;this.src='${imageFallback}'"><img class="back" src="${p.back}" alt="${p.name} back detail" onerror="this.onerror=null;this.src='${imageFallback}'"><span class="badge">All sizes available</span></div>
+  <div class="card-body"><h3>${p.name}</h3><div class="price">${p.price}</div><div class="card-actions">
+   <a class="mini whatsapp" href="https://wa.me/919664349959?text=Hi%20RAZA%20GARMENT%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(p.name)}%20blouse.">Message about this piece</a>
+   <button class="mini" onclick="addToCart('${p.name}')">Add to cart</button>
+  </div></div>
+ </article>`).join("");
+ observeCards();
+}
+const filterIcon=document.getElementById("filterIcon"),filterPanel=document.getElementById("filterPanel");
+filterIcon.addEventListener("click",()=>filterPanel.classList.toggle("open"));
+document.addEventListener("click",e=>{if(!filterPanel.contains(e.target)&&e.target!==filterIcon)filterPanel.classList.remove("open")});
+let priceSel="all",colorSel="all",styleSel="all";
+document.querySelectorAll("#priceFilter .filter-opt").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("#priceFilter .filter-opt").forEach(x=>x.classList.remove("active"));b.classList.add("active");priceSel=b.dataset.price}));
+document.querySelectorAll("#colorFilter .filter-opt").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("#colorFilter .filter-opt").forEach(x=>x.classList.remove("active"));b.classList.add("active");colorSel=b.dataset.color}));
+document.querySelectorAll("#styleFilter .filter-opt").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("#styleFilter .filter-opt").forEach(x=>x.classList.remove("active"));b.classList.add("active");styleSel=b.dataset.style}));
+document.getElementById("applyFilters").addEventListener("click",()=>{filterPanel.classList.remove("open");render(currentFilter)});
+document.getElementById("clearFilters").addEventListener("click",()=>{priceSel="all";colorSel="all";styleSel="all";document.querySelectorAll(".filter-opt").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".filter-opt[data-price='all'],.filter-opt[data-color='all'],.filter-opt[data-style='all']").forEach(x=>x.classList.add("active"));render(currentFilter)});
+const cardObserver=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.2});
+function observeCards(){document.querySelectorAll(".card").forEach(c=>cardObserver.observe(c))}
+render();
+
+let cart=[];
+const cartCountEl=document.getElementById("cartCount");
+const cartDrawer=document.getElementById("cartDrawer"),cartItems=document.getElementById("cartItems"),cartTotal=document.getElementById("cartTotal"),cartCheckout=document.getElementById("cartCheckout");
+function updateCartCount(){
+ cartCountEl.textContent=cart.length;
+ cartCountEl.style.display=cart.length?"flex":"none";
+}
+function renderCart(){
+  if(!cart.length){cartItems.innerHTML='<p class="cart-empty">Your bag is waiting.</p>';cartTotal.textContent="₹0";cartCheckout.disabled=true;return;}
+  cartItems.innerHTML=cart.map((product,index)=>`<div class="cart-item"><img src="${product.img}" alt="${product.name}"><div><strong>${product.name}</strong><small>${product.price} · All sizes available</small></div><button class="cart-remove" type="button" data-cart-remove="${index}" aria-label="Remove ${product.name}">&#10005;</button></div>`).join("");
+  cartTotal.textContent=`₹${cart.reduce((total,product)=>total+product.priceNum,0).toLocaleString("en-IN")}`;
+  cartCheckout.disabled=false;
+}
+function openCart(){cartDrawer.classList.add("open");cartDrawer.setAttribute("aria-hidden","false");document.getElementById("cartOpen").setAttribute("aria-expanded","true");document.getElementById("mobileCartOpen").setAttribute("aria-expanded","true");document.body.style.overflow="hidden";if(lenis)lenis.stop();}
+function closeCart(){cartDrawer.classList.remove("open");cartDrawer.setAttribute("aria-hidden","true");document.getElementById("cartOpen").setAttribute("aria-expanded","false");document.getElementById("mobileCartOpen").setAttribute("aria-expanded","false");document.body.style.overflow="";if(lenis)lenis.start();}
+function addToCart(name,size="38"){
+ const product=products.find(item=>item.name===name);
+ if(!product)return;
+ cart.push({...product,size});
+ updateCartCount();
+ renderCart();
+ openCart();
+}
+updateCartCount();
+renderCart();
+document.getElementById("cartOpen").addEventListener("click",openCart);
+document.getElementById("mobileCartOpen").addEventListener("click",openCart);
+document.querySelectorAll("[data-cart-close]").forEach(item=>item.addEventListener("click",closeCart));
+cartItems.addEventListener("click",event=>{const remove=event.target.closest("[data-cart-remove]");if(!remove)return;cart.splice(Number(remove.dataset.cartRemove),1);updateCartCount();renderCart();});
+cartCheckout.addEventListener("click",()=>{const message=cart.map(product=>product.name).join(", ");window.open(`https://wa.me/919664349959?text=${encodeURIComponent(`Hi RAZA GARMENT, I would like to order: ${message}. Total: ${cartTotal.textContent}.`)}`,"_blank","noopener");});
+
+(function(){
+  const p=document.getElementById("introPattern");
+  if(!p) return;
+  let h="";
+  for(let i=0;i<288;i++){ h+="<span>"+(i%2===0?"✦":"·")+"</span>"; }
+  p.innerHTML=h;
+})();
+
+const story=document.querySelector(".story"), crops=[...document.querySelectorAll(".crop")], marks=[...document.querySelectorAll(".story-mark")], stars=marks.filter(m=>m.textContent.trim()==="✦"), label=document.getElementById("storyLabel"), caption=document.getElementById("storyCaption");
+const labels=["Hand-embroidered","Mirror & sequin detailing","Contrast piping, every seam finished by hand"];
+
+/* --- MOTION LAYER (GSAP + Lenis) --- */
+const reduceMotion=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+const touchDevice=window.matchMedia("(pointer:coarse)").matches;
+const mobileViewport=window.matchMedia("(max-width:768px)").matches;
+let lenis=null;
+if(!reduceMotion&&!touchDevice&&!mobileViewport){
+  lenis=new window.Lenis({duration:1.2,wheelMultiplier:0.7,smoothWheel:true,smoothTouch:0.2});
+  lenis.on("scroll",ScrollTrigger.update);
+  function raf(time){lenis.raf(time);requestAnimationFrame(raf)}
+  requestAnimationFrame(raf);
+}
+gsap.registerPlugin(ScrollTrigger);
+if(lenis){ScrollTrigger.scroller=lenis;}
+
+/* Nav reveal: staggered fade+rise, starts after hero */
+if(!reduceMotion){
+  gsap.set([".logo-spacer",".navlinks",".nav-actions"],{opacity:0,y:12});
+  gsap.to([".logo-spacer",".navlinks",".nav-actions"],{opacity:1,y:0,duration:.8,ease:"power2.out",stagger:.04,delay:.4});
+}
+
+/* Hero headline clip-path reveal */
+if(!reduceMotion){
+  gsap.set(".hero h1 .line",{clipPath:"inset(0 0 100% 0)"});
+  gsap.to(".hero h1 .line",{clipPath:"inset(0 0 0% 0)",y:0,duration:.9,ease:"power3.out",stagger:.08,delay:.5});
+  /* Hero background slideshow: auto-slides every 4 seconds */
+  const heroSlider=document.getElementById("heroSlider");
+  if(heroSlider&&heroSlider.children.length>1){
+    let heroSlideIndex=0;
+    setInterval(()=>{
+      heroSlideIndex=(heroSlideIndex+1)%heroSlider.children.length;
+      heroSlider.style.transform=`translateX(-${heroSlideIndex*100}%)`;
+    },4000);
+  }
+  /* Hero background breathe-out + scroll parallax */
+  gsap.fromTo(".hero-media img",{scale:1.08},{scale:1,duration:1.6,ease:"power2.out",delay:.3});
+  ScrollTrigger.create({
+    trigger:".hero",start:"top top",end:"bottom top",
+    onUpdate:(self)=>{
+      gsap.set(".hero-media img",{y:self.progress*-30});
+    }
+  });
+  /* Hero content reveal */
+  gsap.from(".hero-content",{opacity:0,y:30,duration:.9,ease:"power2.out",delay:.6});
+  /* CTA button magnetic hover */
+  document.querySelectorAll(".actions .btn").forEach(btn=>{
+    const qt=gsap.quickTo(btn,"x",{duration:.3,ease:"power2.out"});
+    btn.addEventListener("mousemove",e=>{
+      const r=btn.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-0.5;
+      qt(x*12);
+    });
+    btn.addEventListener("mouseleave",()=>qt(0));
+  });
+}
+
+/* Story section: one scroll controller for the frame and its captions */
+(function(){
+  if(!story||!crops.length) return;
+  if(mobileViewport){
+    let mobileIndex=0;
+    const showMobileStory=()=>{
+      crops.forEach((crop,index)=>{
+        crop.classList.toggle("active",index===mobileIndex);
+        crop.style.opacity=index===mobileIndex?"1":"0";
+        crop.style.transform=index===mobileIndex?"scale(1)":"scale(1.06)";
+      });
+      stars.forEach((star,index)=>star.classList.toggle("active",index===mobileIndex));
+      label.textContent=labels[mobileIndex];
+      caption.textContent=labels[mobileIndex];
+      mobileIndex=(mobileIndex+1)%crops.length;
+    };
+    showMobileStory();
+    if(!reduceMotion) window.setInterval(showMobileStory,2200);
+    return;
+  }
+  let ticking=false;
+  function updateStory(){
+    ticking=false;
+    const start=story.offsetTop-window.innerHeight*.2;
+    const range=Math.max(1,story.offsetHeight-window.innerHeight*.6);
+    const progress=Math.max(0,Math.min(0.999,(window.scrollY-start)/range));
+    const position=progress*(crops.length-1);
+    const index=Math.min(crops.length-1,Math.floor(position));
+    crops.forEach((crop,i)=>{
+      const distance=Math.abs(i-position), strength=Math.max(0,1-distance);
+      crop.classList.toggle("active",i===index);
+      crop.style.opacity=String(strength);
+      crop.style.transform=`scale(${1.06-(strength*.06)})`;
+    });
+    stars.forEach((star,i)=>star.classList.toggle("active",i===index));
+    label.textContent=labels[index];
+    caption.textContent=labels[index];
+  }
+  function requestStoryUpdate(){
+    if(!ticking){ticking=true;requestAnimationFrame(updateStory);}
+  }
+  let lastScrollY=-1;
+  function watchStoryScroll(){
+    if(lastScrollY!==window.scrollY){lastScrollY=window.scrollY;requestStoryUpdate();}
+    requestAnimationFrame(watchStoryScroll);
+  }
+  window.addEventListener("scroll",requestStoryUpdate,{passive:true});
+  if(lenis) lenis.on("scroll",requestStoryUpdate);
+  window.addEventListener("resize",requestStoryUpdate);
+  watchStoryScroll();
+  updateStory();
+})();
+
+/* Intro reveal */
+if(!reduceMotion){
+  gsap.from(".intro .kicker,.intro .display,.intro .lede",{
+    y:30,opacity:0,duration:.9,ease:"power2.out",stagger:.1,
+    scrollTrigger:{trigger:".intro",start:"top 85%",toggleActions:"play none none reverse"}
+  });
+}
+
+/* Wall: horizontal scroll tied to vertical, scale-up on center focus */
+if(!reduceMotion){
+  const track=document.querySelector(".wall-track");
+  if(track){
+    const cards=[...track.querySelectorAll(".wall-card")];
+    ScrollTrigger.create({
+      trigger:".wall",
+      start:"top 80%",
+      end:"bottom 20%",
+      onUpdate:(self)=>{
+        const progress=self.progress;
+        gsap.set(track,{x:-progress*(track.scrollWidth-track.clientWidth)});
+      }
+    });
+    cards.forEach(card=>{
+      ScrollTrigger.create({
+        trigger:card,
+        start:"left 80%",
+        end:"right 20%",
+        toggleActions:"play none none reverse",
+        onEnter:()=>gsap.to(card,{scale:1.03,duration:.4,ease:"power2.out"}),
+        onLeaveBack:()=>gsap.to(card,{scale:1,duration:.4,ease:"power2.out"})
+      });
+    });
+  }
+}
+
+/* Shop grid: staggered reveal + filter transition */
+function revealCards(){
+  const cards=[...document.querySelectorAll("#productGrid .card")];
+  if(reduceMotion){gsap.set(cards,{opacity:1,transform:"none"});return;}
+  const tl=gsap.timeline({defaults:{opacity:1,y:0,duration:.6,ease:"power2.out"}});
+  cards.forEach((card,i)=>{tl.to(card,{opacity:1,y:0},i*.04)});
+}
+const _origRender=render;
+window.render=function(filter="all"){
+  const oldCards=[...document.querySelectorAll("#productGrid .card")];
+  if(!reduceMotion&&oldCards.length){
+    gsap.to(oldCards,{opacity:0,scale:.95,duration:.15,ease:"power2.out",onComplete:()=>{_origRender(filter);revealCards()}});
+  }else{_origRender(filter);revealCards();}
+};
+/* Wire up filter pills & search to use animated render */
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelector(".filter.active").classList.remove("active");
+  b.classList.add("active");
+  render(b.dataset.filter);
+}));
+if(document.getElementById("searchInput")){
+  document.getElementById("searchInput").addEventListener("input",()=>render(currentFilter));
+}
+
+/* Fit section: pattern circle rotation */
+if(!reduceMotion){
+  gsap.to(".pattern-circle",{rotation:360,duration:40,repeat:-1,ease:"none"});
+}
+
+/* About section: image leads, copy follows */
+if(!reduceMotion){
+  gsap.from(".about-image-frame",{
+    y:40,opacity:0,duration:.9,ease:"power2.out",
+    scrollTrigger:{trigger:".about-visual",start:"top 85%",toggleActions:"play none none reverse"}
+  });
+  gsap.from(".about-content > *",{
+    y:30,opacity:0,duration:.8,ease:"power2.out",stagger:.1,delay:.15,
+    scrollTrigger:{trigger:".about-content",start:"top 85%",toggleActions:"play none none reverse"}
+  });
+}
+
+/* Intro pattern opacity on scroll */
+if(!reduceMotion){
+  ScrollTrigger.create({
+    trigger:".intro",
+    start:"top 60%",
+    end:"bottom 50%",
+    onUpdate:(self)=>{gsap.set(".intro-pattern",{opacity:.5-(self.progress*.3)})}
+  });
+}
+
+/* Nav background blur intensity on scroll */
+if(!reduceMotion){
+  ScrollTrigger.create({
+    trigger:".hero",
+    start:"top top",
+    end:"bottom top",
+    onUpdate:(self)=>{
+      const intensity=self.progress>0.3?1:0;
+      gsap.set(".nav-overlay",{
+        backgroundColor:`rgba(247,240,227,${.88+intensity*.12})`,
+        backdropFilter:`blur(${8+intensity*4}px)`
+      });
+    }
+  });
+}
+
+/* Reviews reveal */
+if(!reduceMotion){
+  gsap.from(".review",{
+    y:30,opacity:0,duration:.7,ease:"power2.out",stagger:.08,
+    scrollTrigger:{trigger:".reviews",start:"top 85%",toggleActions:"play none none reverse"}
+  });
+}
+
+/* Contact links hover */
+document.querySelectorAll(".contact-row a,.about-button").forEach(el=>{
+  el.style.transition="transform .3s cubic-bezier(.65,0,.35,1),opacity .3s cubic-bezier(.65,0,.35,1)";
+  el.addEventListener("mouseenter",()=>gsap.to(el,{scale:1.03,y:-2,duration:.3}));
+  el.addEventListener("mouseleave",()=>gsap.to(el,{scale:1,y:0,duration:.3}));
+});
+
+/* Shop filters hover */
+document.querySelectorAll(".filter").forEach(el=>{
+  el.style.transition="transform .3s cubic-bezier(.65,0,.35,1)";
+  el.addEventListener("mouseenter",()=>gsap.to(el,{scale:1.05,duration:.3}));
+  el.addEventListener("mouseleave",()=>gsap.to(el,{scale:1,duration:.3}));
+});
+
+/* Initial render + reveal */
+render();
+const observer=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){gsap.to(e.target,{opacity:1,y:0,duration:.7,ease:"power2.out"});observer.unobserve(e.target)}
+}),{threshold:.15});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+/* ============ PREMIUM UPGRADES JS ============ */
+
+/* 3D TILT CARDS + FABRIC LENS (1) */
+(function(){
+  const isFine=window.matchMedia("(pointer:fine)").matches;
+  if(!isFine) return;
+  const lens=document.getElementById("fabricLens");
+  const canvas=document.getElementById("lensCanvas");
+  const ctx=canvas.getContext("2d");
+  let activeImg=null,activePhoto=null;
+  let lensX=0,lensY=0,ripples=[];
+
+  function drawLens(){
+    if(!activeImg||!activePhoto) return;
+    const w=canvas.width,h=canvas.height;
+    ctx.clearRect(0,0,w,h);
+    const pr=activePhoto.getBoundingClientRect();
+    const ir=activeImg.getBoundingClientRect();
+    const sx=(lensX-pr.left)/pr.width*ir.width;
+    const sy=(lensY-pr.top)/pr.height*ir.height;
+    const sw=w*0.5,sh=h*0.5;
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(w/2,h/2,w/2,0,Math.PI*2);
+    ctx.clip();
+    ctx.drawImage(activeImg,sx,sy,sw,sh,0,0,w,h);
+    // ripple distortion overlay
+    ripples.forEach(r=>{
+      const dx=r.x-w/2,dy=r.y-h/2;
+      const dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<r.r){
+        const strength=(1-dist/r.r)*r.a;
+        ctx.beginPath();
+        ctx.arc(r.x,r.y,r.r*0.4,0,Math.PI*2);
+        ctx.fillStyle=`rgba(255,220,170,${strength*0.25})`;
+        ctx.fill();
+      }
+    });
+    ctx.restore();
+    // gold ring
+    ctx.beginPath();
+    ctx.arc(w/2,h/2,w/2-2,0,Math.PI*2);
+    ctx.strokeStyle="rgba(184,139,43,.7)";
+    ctx.lineWidth=3;
+    ctx.stroke();
+  }
+
+  function animate(){
+    ripples=ripples.filter(r=>r.a>0.01).map(r=>({...r,a:r.a*0.92,r:r.r+0.6}));
+    drawLens();
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  document.addEventListener("mousemove",e=>{
+    lensX=e.clientX;lensY=e.clientY;
+    lens.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;
+    if(activePhoto){
+      ripples.push({x:canvas.width/2+(Math.random()-0.5)*20,y:canvas.height/2+(Math.random()-0.5)*20,r:30,a:0.5});
+    }
+  });
+
+  document.addEventListener("mouseover",e=>{
+    const photo=e.target.closest(".photo");
+    if(photo){
+      activePhoto=photo;
+      activeImg=photo.querySelector("img");
+      document.body.classList.add("lens-on");
+    }
+  });
+  document.addEventListener("mouseout",e=>{
+    if(e.target.closest(".photo")){
+      activePhoto=null;activeImg=null;
+      document.body.classList.remove("lens-on");
+    }
+  });
+
+  /* 3D tilt on cards */
+  document.querySelectorAll(".card").forEach(card=>{
+    card.classList.add("tilt-ready");
+    card.addEventListener("mousemove",e=>{
+      const r=card.getBoundingClientRect();
+      const rx=((e.clientY-r.top)/r.height-0.5)*-8;
+      const ry=((e.clientX-r.left)/r.width-0.5)*8;
+      card.style.transform=`perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
+    });
+    card.addEventListener("mouseleave",()=>{
+      card.style.transform="";
+    });
+  });
+})();
+
+/* 4. EXPANDABLE FIT VISUALIZER */
+(function(){
+  const range=document.getElementById("fitRange");
+  if(!range) return;
+  const sizeLabel=document.getElementById("fitSizeLabel");
+  const status=document.getElementById("fitStatus");
+  const seamL=document.getElementById("seamL");
+  const seamR=document.getElementById("seamR");
+  const fitBody=document.getElementById("fitBody");
+
+  function updateFit(){
+    const size=parseInt(range.value,10);
+    const t=(size-34)/8; // 0..1
+    sizeLabel.textContent=size;
+    const allowance=1+Math.round(t*3); // 1" to 4"
+    status.innerHTML=`Size <b>${size}</b> — <b>${allowance}″</b> side allowance included. Ask us for extra expandable margin.`;
+    // animate SVG expansion
+    const expand=t*14;
+    seamL.setAttribute("x1",72-expand);
+    seamL.setAttribute("x2",62-expand);
+    seamR.setAttribute("x1",228+expand);
+    seamR.setAttribute("x2",238+expand);
+    fitBody.setAttribute("d",`M150 46 C ${120-expand*0.4} 52, ${96-expand} 70, ${84-expand} 98 L ${72-expand} 122 L ${62-expand} 252 C ${60-expand} 272, ${78-expand} 288, ${102-expand} 286 L ${198+expand} 286 C ${222+expand} 288, ${240+expand} 272, ${238+expand} 252 L ${228+expand} 122 L ${216+expand} 98 C ${204+expand} 70, ${180+expand*0.4} 52, 150 46 Z`);
+  }
+  range.addEventListener("input",updateFit);
+  updateFit();
+})();
+
+/* 5. MORPHING QUICK-VIEW MODAL */
+(function(){
+  const modal=document.getElementById("quickModal");
+  if(!modal) return;
+  const qmImgMain=document.getElementById("qmImgMain");
+  const qmImgBack=document.getElementById("qmImgBack");
+  const qmTitle=document.getElementById("qmTitle");
+  const qmPrice=document.getElementById("qmPrice");
+  const qmMeta=document.getElementById("qmMeta");
+  const qmWhatsapp=document.getElementById("qmWhatsapp");
+  const qmAddCart=document.getElementById("qmAddCart");
+  const sizeButtons=[...document.querySelectorAll(".qm-size-pill")];
+  let currentProduct=null;
+  let selectedSize="38";
+
+  function updateSize(size){
+    selectedSize=size;
+    sizeButtons.forEach(button=>button.classList.toggle("hot",button.dataset.size===size));
+    if(currentProduct) qmWhatsapp.href=`https://wa.me/919664349959?text=${encodeURIComponent(`Hi RAZA GARMENT, I'm interested in the ${currentProduct.name} blouse in size ${selectedSize}.`)}`;
+  }
+  sizeButtons.forEach(button=>button.addEventListener("click",()=>updateSize(button.dataset.size)));
+
+  function openQuickView(product,card){
+    currentProduct=product;
+    qmImgMain.src=product.img;
+    qmImgBack.src=product.back;
+    qmTitle.textContent=product.name;
+    qmPrice.textContent=product.price;
+    qmMeta.textContent=`${product.tags.filter(tag=>!["red","yellow","blue"].includes(tag)).join(" · ")||"Hand-finished detail"} · All sizes available`;
+    updateSize(selectedSize);
+    modal.classList.add("open");
+    document.body.style.overflow="hidden";
+    if(lenis) lenis.stop();
+  }
+  function closeQuickView(){
+    modal.classList.remove("open");
+    document.body.style.overflow="";
+    if(lenis) lenis.start();
+  }
+  document.querySelectorAll("[data-qm-close]").forEach(el=>el.addEventListener("click",closeQuickView));
+  document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if(modal.classList.contains("open"))closeQuickView();if(cartDrawer.classList.contains("open"))closeCart()});
+  qmAddCart.addEventListener("click",()=>{
+    if(currentProduct){addToCart(currentProduct.name,selectedSize);closeQuickView();}
+  });
+
+  /* Wire up product cards to open quick view on photo click */
+  document.addEventListener("click",e=>{
+    const card=e.target.closest(".card");
+    if(card&&!e.target.closest(".mini")&&!e.target.closest("a")){
+      const name=card.querySelector("h3").textContent;
+      const product=products.find(p=>p.name===name);
+      if(product) openQuickView(product,card);
+    }
+  });
+})();
+
+const mobileNavItems=[...document.querySelectorAll(".mobile-nav a,.mobile-nav button")];
+const menuToggle=document.getElementById("menuToggle"),primaryNavigation=document.getElementById("primaryNavigation"),mainHeader=document.querySelector(".nav-overlay");
+function closeMenu(){mainHeader.classList.remove("menu-open");menuToggle.setAttribute("aria-expanded","false");menuToggle.setAttribute("aria-label","Open menu");}
+menuToggle.addEventListener("click",()=>{const open=mainHeader.classList.toggle("menu-open");menuToggle.setAttribute("aria-expanded",String(open));menuToggle.setAttribute("aria-label",open?"Close menu":"Open menu");});
+primaryNavigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",closeMenu));
+document.addEventListener("click",event=>{if(mainHeader.classList.contains("menu-open")&&!mainHeader.contains(event.target))closeMenu();});
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeMenu();});
+mobileNavItems.filter(item=>item.matches("a")).forEach(link=>link.addEventListener("click",()=>{
+  mobileNavItems.forEach(item=>item.classList.toggle("active",item===link));
+}));
+const mobileNavSections=[...document.querySelectorAll("#story,#wall,#collection,#visit")];
+const mobileNavObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(!entry.isIntersecting)return;
+  const target=entry.target.id;
+  const match=target==="story"?"Story":target==="visit"?"Visit":target==="collection"?"Collection":"Home";
+  mobileNavItems.forEach(item=>item.classList.toggle("active",item.textContent.trim()===match));
+}),{rootMargin:"-35% 0px -55% 0px",threshold:0});
+mobileNavSections.forEach(section=>mobileNavObserver.observe(section));
+
+</script>
+
+</body>
+</html>
