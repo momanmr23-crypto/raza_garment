@@ -39,9 +39,11 @@ a{text-decoration:none;color:inherit}
 .nav-icon{display:inline-flex;align-items:center;justify-content:center;color:#6b1d24;transition:opacity .2s ease,transform .2s ease;position:relative}
 .nav-icon:hover{opacity:.8;transform:translateY(-1px)}
 .cart-count{position:absolute;top:-6px;right:-8px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#cf2020;color:#fff;font-size:10px;font-weight:700;line-height:16px;text-align:center;display:none}
-.hero{position:relative;overflow:hidden;background:url('image/hero image.jpg') no-repeat center center;background-size:contain}
-.hero-media{position:relative;width:100%}
-.hero-media img{width:100%;height:auto;display:block;filter:saturate(1.05) contrast(1.03)}
+.hero{position:relative;overflow:hidden;background:url('image/hero image.webp') no-repeat center center;background-size:contain}
+.hero-media{position:relative;width:100%;overflow:hidden}
+.hero-slider{display:flex;transition:transform 1.2s cubic-bezier(.65,0,.35,1);will-change:transform}
+.hero-slide{min-width:100%;flex-shrink:0}
+.hero-slide img{width:100%;height:auto;display:block;filter:saturate(1.05) contrast(1.03)}
 .hero:after{display:none}
 .hero-content{display:block;position:absolute;top:24%;left:6vw;z-index:10;max-width:480px;color:#2b2118}
 .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px;color:#f0d48b}
@@ -437,7 +439,7 @@ body.lens-on #fabricLens{display:block}
 <div class="topbar" aria-label="Store information"><div class="topbar-track"><span>Hand-finished in Mumbai · All sizes available · Expandable fit · Tailoring support</span><span aria-hidden="true">Hand-finished in Mumbai · All sizes available · Expandable fit · Tailoring support</span></div></div>
 
 <header class="nav-overlay">
-  <a class="logo-spacer" href="#top" aria-label="RAZA Garment home"><img src="image/raza_garment%20logo.png" alt="RAZA Garment logo"></a>
+  <a class="logo-spacer" href="#top" aria-label="RAZA Garment home"><img src="image/raza_garment%20logo.webp" alt="RAZA Garment logo"></a>
   <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="primaryNavigation" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <nav class="navlinks" id="primaryNavigation">
     <a href="#wall">The Wall</a>
@@ -468,7 +470,13 @@ body.lens-on #fabricLens{display:block}
 
 <section class="hero noise">
   <div class="hero-media">
-    <img src="image/hero image.jpg" alt="Raza Garment Hero Background" class="hero-bg-img">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide"><img src="image/hero image.webp" alt="Raza Garment hero background"></div>
+      <div class="hero-slide"><img src="image/hero_image2.webp" alt="Raza Garment blouse collection"></div>
+      <div class="hero-slide"><img src="image/hero_image3.webp" alt="Hand-finished blouse detail"></div>
+      <div class="hero-slide"><img src="image/hero_image4.webp" alt="Traditional Indian textile at Raza Garment"></div>
+      <div class="hero-slide"><img src="image/hero_image5.webp" alt="Raza Garment festive collection"></div>
+    </div>
   </div>
 
    <div class="hero-content">
@@ -593,7 +601,7 @@ body.lens-on #fabricLens{display:block}
     <div class="about-visual">
       <div class="about-image-frame">
         <img
-          src="image/about_us.jpg"
+          src="image/about_us.webp"
           alt="Colorful hand-finished blouses and traditional Indian textile details at RAZA GARMENT"
         />
 
@@ -865,6 +873,15 @@ if(!reduceMotion){
 if(!reduceMotion){
   gsap.set(".hero h1 .line",{clipPath:"inset(0 0 100% 0)"});
   gsap.to(".hero h1 .line",{clipPath:"inset(0 0 0% 0)",y:0,duration:.9,ease:"power3.out",stagger:.08,delay:.5});
+  /* Hero background slideshow: auto-slides every 4 seconds */
+  const heroSlider=document.getElementById("heroSlider");
+  if(heroSlider&&heroSlider.children.length>1){
+    let heroSlideIndex=0;
+    setInterval(()=>{
+      heroSlideIndex=(heroSlideIndex+1)%heroSlider.children.length;
+      heroSlider.style.transform=`translateX(-${heroSlideIndex*100}%)`;
+    },4000);
+  }
   /* Hero background breathe-out + scroll parallax */
   gsap.fromTo(".hero-media img",{scale:1.08},{scale:1,duration:1.6,ease:"power2.out",delay:.3});
   ScrollTrigger.create({
